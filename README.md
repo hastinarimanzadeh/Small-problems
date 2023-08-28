@@ -1,1 +1,1 @@
-# Mathematics problems
+# Mathematical problems
