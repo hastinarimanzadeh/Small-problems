@@ -19,10 +19,21 @@ int fib(int n) {
 	return t1;
 }
 
+int even_values_fib(int limit) {
+	int a = 1, b = 1, s, sum = 0;
+	while (b < limit) {
+		if (b % 2 == 0)
+			sum += b;
+		s = a + b;
+		a = b;
+		b = s;
+	}
+	return sum;
+
+}
 int main() {
-	int n;
-	std::cin >> n;
-	std::cout << fib(n) << std::endl;
+
+	std::cout << even_values_fib(4000000) << std::endl;
 	return 0;
 }
 
